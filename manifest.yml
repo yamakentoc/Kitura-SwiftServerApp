@@ -1,0 +1,11 @@
+---
+applications:
+- instances: 1
+  timeout: 180
+  name: SwiftServerApp
+  buildpack: swift_buildpack
+  command: "'SwiftServerApp'"
+  memory: 128M
+  random-route: true
+  env:
+    OPENAPI_SPEC : "/swagger/api"
